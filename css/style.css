@@ -387,7 +387,7 @@ header h1 .funtitle{
     border-style: solid;
   }
 
-  .active:hover{
+  .active{
     background-color: white;
     color: yellowgreen;
     font-weight: bolder;
@@ -399,6 +399,23 @@ header h1 .funtitle{
     .container{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;  
     }
+
+  }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    /*Turn off transition*/
+    .skip a{
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+    header{
+      background-attachment: initial;
+    }
+  }
