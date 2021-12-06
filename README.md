@@ -1,2 +1,2 @@
-# 339-Final-Complete
-Final Portfolio Iteration SI 339
+# FinalProject-SI339
+Final Project for SI 339
