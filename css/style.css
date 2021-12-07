@@ -161,6 +161,10 @@ nav ul li a{
 
 }
 
+nav ul li a:hover{
+  text-decoration: double;
+}
+
 nav{
   display: flex;
   flex-direction: row;
